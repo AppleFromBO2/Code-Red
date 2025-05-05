@@ -53,24 +53,24 @@ init()
 	level.zombieSelectionInProgress = true;
 	
 	//These Can Be Changed
-	level.timeremainingtext = "Time Remaining: ";
-	level.zombieficationTime = 10; //In Seconds
+	level.timeremainingtext = "Nuke Launch: ";
+	level.zombieficationTime = 15; //In Seconds
 	level.gametime = 1800; //In Seconds
 	level.survivorCashBonus = 150;
 	level.moneyperkill = 125;
 	level.moneyperassist = 100;
 	level.moneyperkillzombie = 500;
 	level.moneyperzombiedeath = 100;
-	level.teamscoreperkill = 0;
-	level.teamscoreperdeath = 0;
-	level.teamscoreperheadshot = 0;
+	level.teamscoreperkill = 4;
+	level.teamscoreperdeath = 1;
+	level.teamscoreperheadshot = 2;
 	level.turretLimit = 5;
 	level.amountOfBotsToSpawn = 11;
 	level.spawnBots = true;
 	level.useCustomMaps = true;
 	level.hostCantBecomeZombie = true; //If true host cannot become the starting zombie
 	level.enableInformationBar = true;
-	level.informationBarText = "^7Welcome to ^1Zombieland ^7Edited By ^5iAmCrystal ^7| [{+actionslot 1}] To ^2Open ^7The Shop | [{+actionslot 3}] To ^1Close ^7The Shop | [{+gostand}] To Select Options | [{+usereload}] To Go Back| ^2Subscribe ^1YouTube ^6iTzCrystal__";
+	level.informationBarText = "^FAttention, Welcome To ^3Code ^1Red! ^7A ^6Outburst ^7Vs Remaining ^5Life ^4Gamemode!^7 | [{+actionslot 1}] To ^2Open ^7The Shop | [{+gostand}] To Select Options | [{+usereload}] To Go Back | ^1YouTube: ^5ImAppleRBX";
 	level.supplyDropModel = "t6_wpn_supply_drop_ally";
 	level.supplyDropModelAxis = "t6_wpn_supply_drop_axis";
 	level.supplyDropModelTrap = "t6_wpn_supply_drop_trap";
@@ -660,7 +660,7 @@ informationBar()
 		level.infoBarBackground.horzAlign = "center";
 		level.infoBarBackground.vertAlign = "bottom";
 		
-		level.infoBarText = level drawText(level.informationBarText, "objective", 2, 1000, 26, (1, 1, 1), 1, (0, 0, 0), 0, 10, true);	
+		level.infoBarText = level drawText(level.informationBarText, "smallfixed", 2, 1000, 32, (1, 1, 1), 1, (0, 0, 0), 0, 10, true);	
 		level.infoBarText.alignX = "center";
 		level.infoBarText.alignY = "bottom";
 		level.infoBarText.horzAlign = "center";
@@ -752,6 +752,7 @@ spyplane()
   }
  }
 }*/
+
 
 
 
